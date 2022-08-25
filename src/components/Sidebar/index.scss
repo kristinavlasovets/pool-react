@@ -26,7 +26,7 @@ nav {
   position: absolute;
   height: 250px;
   top: 50%;
-  margin-top: -300px;
+  margin-top: -350px;
   width: 100%;
 
   a {
@@ -42,7 +42,7 @@ nav {
     }
 
     &:hover {
-      color: #ffffff;
+      color: #6868ce;
 
       svg {
         opacity: 0;
@@ -80,6 +80,29 @@ nav {
   a.contact-link {
     &::after {
       content: "contact";
+    }
+  }
+}
+ul {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    a {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      margin: 10px;
+
+      &:hover svg {
+        color: #6868ce;
+      }
     }
   }
 }

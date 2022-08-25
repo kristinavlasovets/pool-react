@@ -1,15 +1,13 @@
 import "./App.scss"
 import { Routes, Route } from "react-router-dom"
 import { Layout } from "./components/Layout"
-import { Sidebar } from "./components/Sidebar"
+import { Home } from "./components/Home"
 
-function App() {
+export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />} />
-      <Route path="/sidebar" element={<Sidebar />} />
+      <Route index element={<Home/>}/>
     </Routes>
   )
 }
-
-export default App

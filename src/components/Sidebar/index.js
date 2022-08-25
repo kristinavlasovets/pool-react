@@ -3,6 +3,7 @@ import { Link, NavLink} from "react-router-dom";
 import LogoS from '../../assets/images/logo-s.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF, faYoutube, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export const Sidebar = () => {
   return (
@@ -21,6 +22,28 @@ export const Sidebar = () => {
             <FontAwesomeIcon icon={faEnvelope} color='#ffff'/>
         </NavLink>
       </nav>
+      <ul>
+        <li>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/Equinox">
+                <FontAwesomeIcon icon={faFacebookF} color="#ffff"/>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/user/equinox">
+                <FontAwesomeIcon icon={faYoutube} color="#ffff"/>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/Equinox">
+                <FontAwesomeIcon icon={faTwitter} color="#ffff"/>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/equinox/">
+                <FontAwesomeIcon icon={faInstagram} color="#ffff"/>
+            </a>
+        </li>
+      </ul>
     </div>
   )
 }
