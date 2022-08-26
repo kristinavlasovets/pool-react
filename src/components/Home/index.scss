@@ -1,0 +1,28 @@
+.home-page {
+  .text-zone {
+    position: absolute;
+    left: 12%;
+    top: -5%;
+    width: 90%;
+    color: #53595b;
+
+    h1 {
+      transform: translateX(30%);
+      font-family: "Didact Gothic", sans-serif;
+      font-size: 56px;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 16px;
+    }
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        z-index: -1;
+    }
+
+  
+  }
+}

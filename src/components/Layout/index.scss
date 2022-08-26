@@ -5,20 +5,17 @@
     font-size: 18px;
 }
 
-.top-tags {
-    bottom: auto;
-    top: 35px;
-}
-
-.tags {
-    color: #ffff;
-    opacity: 0.6;
+.container {
+    width: 90%;
+    will-change: contents;
+    height: 90%;
+    min-height: 700px;
     position: absolute;
-    bottom: 35px;
-    left: 220px;
-    font-family: 'Didact Gothic', sans-serif;
-}
-
-.bottom-tag-html {
-    margin-left: -20px;
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
 }
