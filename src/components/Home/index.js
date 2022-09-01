@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { AnimatedLetters } from "../AnimatedLetters"
 import { Logo } from "./Logo"
+import Loader from 'react-loaders';
 
 export const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate")
@@ -15,6 +16,7 @@ export const Home = () => {
   }, [])
 
   return (
+    <>
     <div className="container home-page">
       <div className="text-zone">
         <AnimatedLetters
@@ -30,5 +32,7 @@ export const Home = () => {
       </div>
       <Logo />
     </div>
+    <Loader type="pacman"/>
+    </>
   )
 }
