@@ -9,7 +9,7 @@
     width: 100%;
     will-change: contents;
     height: 100%;
-    min-height: 700px;
+    min-height: 1000px;
     position: absolute;
     opacity: 0;
     top: 0;
@@ -20,7 +20,8 @@
     animation-delay: 1s;
 }
 
-.about-page {
+.about-page,
+.contact-page {
     .text-zone {
         position: absolute;
         left: 10vw;
